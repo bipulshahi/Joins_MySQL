@@ -47,6 +47,12 @@ FROM Customers c1
 JOIN Customers c2 ON c1.country = c2.country
 WHERE c1.customer_id <> c2.customer_id;
 
+select A.first_name,B.first_name
+from customers A
+join customers B
+on A.country = B.country
+where A.customer_id < B.customer_id;
+
 
 -- SQL CROSS JOIN
 SELECT c.first_name, o.category
